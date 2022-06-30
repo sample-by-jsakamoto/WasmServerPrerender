@@ -2,7 +2,7 @@
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
     <title>WasmServerPrerender</title>
-    <base href="/"/>
+    <base href="/WasmServerPrerender/"/>
     <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet"/>
     <link href="css/app.css" rel="stylesheet"/>
     <link href="WasmServerPrerender.styles.css" rel="stylesheet"/>
@@ -11,14 +11,14 @@
     <link rel="apple-touch-icon" sizes="192x192" href="icon-192.png"/>
 
 <!-- %%-PRERENDERING-HEADOUTLET-BEGIN-%% -->
-<!--Blazor:{"type":"webassembly","assembly":"Microsoft.AspNetCore.Components.Web","typeName":"Microsoft.AspNetCore.Components.Web.HeadOutlet","parameterDefinitions":"W10=","parameterValues":"W10=","prerenderId":"09cd144e46994082bc0afa7931d51fa6"}--><title>Counter</title><!--Blazor:{"prerenderId":"09cd144e46994082bc0afa7931d51fa6"}-->
+<!--Blazor:{"type":"webassembly","assembly":"Microsoft.AspNetCore.Components.Web","typeName":"Microsoft.AspNetCore.Components.Web.HeadOutlet","parameterDefinitions":"W10=","parameterValues":"W10=","prerenderId":"f4563638dee145cda71da846282bedbb"}--><title>Counter</title><!--Blazor:{"prerenderId":"f4563638dee145cda71da846282bedbb"}-->
 <!-- %%-PRERENDERING-HEADOUTLET-END-%% -->
 </head>
 
 <body>
     <div id="app">
 <!-- %%-PRERENDERING-BEGIN-%% -->
-<!--Blazor:{"type":"webassembly","assembly":"WasmServerPrerender","typeName":"WasmServerPrerender.App","parameterDefinitions":"W10=","parameterValues":"W10=","prerenderId":"e11336df5b2b43c595a9a19caf563203"}--><div class="page" b-ifgyejqhj1><div class="sidebar" b-ifgyejqhj1><div class="top-row ps-3 navbar navbar-dark" b-3quute2npb><div class="container-fluid" b-3quute2npb><a class="navbar-brand" href b-3quute2npb>WasmServerPrerender</a>
+<!--Blazor:{"type":"webassembly","assembly":"WasmServerPrerender","typeName":"WasmServerPrerender.App","parameterDefinitions":"W10=","parameterValues":"W10=","prerenderId":"2421c30c10854bfb88d79f10196355b6"}--><div class="page" b-ifgyejqhj1><div class="sidebar" b-ifgyejqhj1><div class="top-row ps-3 navbar navbar-dark" b-3quute2npb><div class="container-fluid" b-3quute2npb><a class="navbar-brand" href b-3quute2npb>WasmServerPrerender</a>
         <button title="Navigation menu" class="navbar-toggler" b-3quute2npb><span class="navbar-toggler-icon" b-3quute2npb></span></button></div></div>
 
 <div class="collapse" b-3quute2npb><nav class="flex-column" b-3quute2npb><div class="nav-item px-3" b-3quute2npb><a href="" class="nav-link"><span class="oi oi-home" aria-hidden="true" b-3quute2npb></span> Home
@@ -37,7 +37,7 @@
 <p role="status">Current count: 0</p>
 
 <button class="btn btn-primary">Click me</button></article></main></div>
-        <!--Blazor:{"prerenderId":"e11336df5b2b43c595a9a19caf563203"}-->
+        <!--Blazor:{"prerenderId":"2421c30c10854bfb88d79f10196355b6"}-->
 <!-- %%-PRERENDERING-END-%% -->
 <!--Blazor-Component-State:e30=--></div>
 
@@ -46,9 +46,11 @@
         <a href="" class="reload">Reload</a>
         <a class="dismiss">🗙</a>
     </div>
-    <script src="_framework/blazor.webassembly.js"></script>
+    <script src="_framework/blazor.webassembly.js" autostart="false"></script>
     <script>navigator.serviceWorker.register('service-worker.js');</script>
 
 
 
+    <script src="decode.min.js"></script>
+    <script src="brotliloader.min.js"></script>
 </body></html>

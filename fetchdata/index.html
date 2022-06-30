@@ -2,7 +2,7 @@
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
     <title>WasmServerPrerender</title>
-    <base href="/"/>
+    <base href="/WasmServerPrerender/"/>
     <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet"/>
     <link href="css/app.css" rel="stylesheet"/>
     <link href="WasmServerPrerender.styles.css" rel="stylesheet"/>
@@ -11,14 +11,14 @@
     <link rel="apple-touch-icon" sizes="192x192" href="icon-192.png"/>
 
 <!-- %%-PRERENDERING-HEADOUTLET-BEGIN-%% -->
-<!--Blazor:{"type":"webassembly","assembly":"Microsoft.AspNetCore.Components.Web","typeName":"Microsoft.AspNetCore.Components.Web.HeadOutlet","parameterDefinitions":"W10=","parameterValues":"W10=","prerenderId":"1d822cd31cff42108ae7d865d4331073"}--><title>Weather forecast</title><!--Blazor:{"prerenderId":"1d822cd31cff42108ae7d865d4331073"}-->
+<!--Blazor:{"type":"webassembly","assembly":"Microsoft.AspNetCore.Components.Web","typeName":"Microsoft.AspNetCore.Components.Web.HeadOutlet","parameterDefinitions":"W10=","parameterValues":"W10=","prerenderId":"c684e7ae84ff4cfdb01ea1dcd9cdc921"}--><title>Weather forecast</title><!--Blazor:{"prerenderId":"c684e7ae84ff4cfdb01ea1dcd9cdc921"}-->
 <!-- %%-PRERENDERING-HEADOUTLET-END-%% -->
 </head>
 
 <body>
     <div id="app">
 <!-- %%-PRERENDERING-BEGIN-%% -->
-<!--Blazor:{"type":"webassembly","assembly":"WasmServerPrerender","typeName":"WasmServerPrerender.App","parameterDefinitions":"W10=","parameterValues":"W10=","prerenderId":"895289dd9bf34d97905a8731e4b80717"}--><div class="page" b-ifgyejqhj1><div class="sidebar" b-ifgyejqhj1><div class="top-row ps-3 navbar navbar-dark" b-3quute2npb><div class="container-fluid" b-3quute2npb><a class="navbar-brand" href b-3quute2npb>WasmServerPrerender</a>
+<!--Blazor:{"type":"webassembly","assembly":"WasmServerPrerender","typeName":"WasmServerPrerender.App","parameterDefinitions":"W10=","parameterValues":"W10=","prerenderId":"6b4cf30be43b4fd3bfa3f9db6933c5f8"}--><div class="page" b-ifgyejqhj1><div class="sidebar" b-ifgyejqhj1><div class="top-row ps-3 navbar navbar-dark" b-3quute2npb><div class="container-fluid" b-3quute2npb><a class="navbar-brand" href b-3quute2npb>WasmServerPrerender</a>
         <button title="Navigation menu" class="navbar-toggler" b-3quute2npb><span class="navbar-toggler-icon" b-3quute2npb></span></button></div></div>
 
 <div class="collapse" b-3quute2npb><nav class="flex-column" b-3quute2npb><div class="nav-item px-3" b-3quute2npb><a href="" class="nav-link"><span class="oi oi-home" aria-hidden="true" b-3quute2npb></span> Home
@@ -54,7 +54,7 @@
                     <td>-2</td>
                     <td>29</td>
                     <td>Chilly</td></tr></tbody></table></article></main></div>
-        <!--Blazor:{"prerenderId":"895289dd9bf34d97905a8731e4b80717"}-->
+        <!--Blazor:{"prerenderId":"6b4cf30be43b4fd3bfa3f9db6933c5f8"}-->
 <!-- %%-PRERENDERING-END-%% -->
 <!--Blazor-Component-State:eyJmZXRjaGRhdGEiOiJXM3NpWkdGMFpTSTZJakl3TVRndE1EVXRNRFpVTURBNk1EQTZNREFpTENKMFpXMXdaWEpoZEhWeVpVTWlPakVzSW5OMWJXMWhjbmtpT2lKR2NtVmxlbWx1WnlJc0luUmxiWEJsY21GMGRYSmxSaUk2TXpOOUxIc2laR0YwWlNJNklqSXdNVGd0TURVdE1EZFVNREE2TURBNk1EQWlMQ0owWlcxd1pYSmhkSFZ5WlVNaU9qRTBMQ0p6ZFcxdFlYSjVJam9pUW5KaFkybHVaeUlzSW5SbGJYQmxjbUYwZFhKbFJpSTZOVGQ5TEhzaVpHRjBaU0k2SWpJd01UZ3RNRFV0TURoVU1EQTZNREE2TURBaUxDSjBaVzF3WlhKaGRIVnlaVU1pT2kweE15d2ljM1Z0YldGeWVTSTZJa1p5WldWNmFXNW5JaXdpZEdWdGNHVnlZWFIxY21WR0lqbzVmU3g3SW1SaGRHVWlPaUl5TURFNExUQTFMVEE1VkRBd09qQXdPakF3SWl3aWRHVnRjR1Z5WVhSMWNtVkRJam90TVRZc0luTjFiVzFoY25raU9pSkNZV3h0ZVNJc0luUmxiWEJsY21GMGRYSmxSaUk2Tkgwc2V5SmtZWFJsSWpvaU1qQXhPQzB3TlMweE1GUXdNRG93TURvd01DSXNJblJsYlhCbGNtRjBkWEpsUXlJNkxUSXNJbk4xYlcxaGNua2lPaUpEYUdsc2JIa2lMQ0owWlcxd1pYSmhkSFZ5WlVZaU9qSTVmVjA9In0=--></div>
 
@@ -63,9 +63,11 @@
         <a href="" class="reload">Reload</a>
         <a class="dismiss">🗙</a>
     </div>
-    <script src="_framework/blazor.webassembly.js"></script>
+    <script src="_framework/blazor.webassembly.js" autostart="false"></script>
     <script>navigator.serviceWorker.register('service-worker.js');</script>
 
 
 
+    <script src="decode.min.js"></script>
+    <script src="brotliloader.min.js"></script>
 </body></html>
