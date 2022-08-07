@@ -1,3 +1,54 @@
+/* /Components/UpdatePWA.razor.rz.scp.css */
+.update-pwa-ui[b-mfr1yj91p4] {
+    background-color: darkorange;
+    color: #fff;
+    padding: 0 24px;
+    position: fixed;
+    top: -41px;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    overflow: hidden;
+    height: 40px;
+    line-height: 40px;
+    transition: top linear 0.5s;
+}
+
+    .update-pwa-ui.visible[b-mfr1yj91p4] {
+        top: 0;
+    }
+
+.update-pwa-ui-yes-button[b-mfr1yj91p4] {
+    font-size: 0.8em;
+    background-color: transparent;
+    color: #fff;
+    border: solid 2px #ffffff80;
+    border-radius: 4px;
+    height: 32px;
+    line-height: 30px;
+    padding: 0 12px;
+    vertical-align: middle;
+    transition: all linear 0.2s;
+    margin-left: 8px;
+}
+
+    .update-pwa-ui-yes-button:hover[b-mfr1yj91p4] {
+        background-color: #ffffff40;
+    }
+
+.update-pwa-ui-close-button[b-mfr1yj91p4] {
+    position: absolute;
+    right: 8px;
+    width: 32px;
+    text-align: center;
+    cursor: pointer;
+    color: #ffffff80;
+    transition: all linear 0.2s;
+}
+
+    .update-pwa-ui-close-button:hover[b-mfr1yj91p4] {
+        color: #ffffff;
+    }
 /* /Shared/MainLayout.razor.rz.scp.css */
 .page[b-ifgyejqhj1] {
     position: relative;
