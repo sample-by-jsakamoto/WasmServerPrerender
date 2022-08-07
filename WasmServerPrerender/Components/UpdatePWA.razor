@@ -1,0 +1,48 @@
+﻿@implements IDisposable
+@inject IJSRuntime JSRuntime
+@inject Microsoft.AspNetCore.Components.WebAssembly.Hosting.IWebAssemblyHostEnvironment HostEnvironment
+
+
+<div class="@("update-pwa-ui" + (this._Visible ? " visible" : ""))">
+    <span>The new version is ready. Do you want to update now?</span>
+    <span><button @onclick="OnClickYesAsync" class="update-pwa-ui-yes-button">YES</button></span>
+    <span @onclick="OnClickClose" class="update-pwa-ui-close-button">✕</span>
+</div>
+
+@code {
+    private bool _Visible = false;
+
+    private DotNetObjectReference<UpdatePWA>? _This;
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            this._This = DotNetObjectReference.Create(this);
+            await this.JSRuntime.InvokeVoidAsync("BlazorPWAUpdater.setToBeReady", this._This);
+        }
+    }
+
+    public void Dispose()
+    {
+        this._This?.Dispose();
+    }
+
+    [JSInvokable]
+    public void OnNextVersionIsWaiting()
+    {
+        if (this.HostEnvironment.Environment != "Production") return;
+        this._Visible = true;
+        this.StateHasChanged();
+    }
+
+    private async Task OnClickYesAsync()
+    {
+        await this.JSRuntime.InvokeVoidAsync("BlazorPWAUpdater.skipWaiting");
+    }
+
+    private void OnClickClose()
+    {
+        this._Visible = false;
+    }
+}
