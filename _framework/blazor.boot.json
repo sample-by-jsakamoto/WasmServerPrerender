@@ -36,7 +36,7 @@
       "System.Runtime.dll": "sha256-efr94BUF9CP+pw+aKsXmpGhxVjKae5+D5DzYq7CW2GI=",
       "System.Text.Encodings.Web.dll": "sha256-aGUUYYpDQhPFrY64BhZ+S8grJfGPYHypREN3r\/I+Duk=",
       "System.Text.Json.dll": "sha256-QYFjdiKueurLL88lFIxDhqqXQCn3zU6ZePmfqPPN4rg=",
-      "WasmServerPrerender.dll": "sha256-oa16S6y2TE0kIJO9TeU9oVUN1xl94GVp5kqaA4gbvg4="
+      "WasmServerPrerender.dll": "sha256-qUh564OeQwadESW1pDdaWs4n179MwUeebVxd\/qeMdjg="
     },
     "extensions": null,
     "lazyAssembly": null,
